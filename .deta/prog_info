@@ -1,0 +1,1 @@
+{"id":"0dce7bee-fdd2-4767-9d2c-24e8aa17eea8","space":6764,"runtime":"python3.7","name":"rogowski-api","path":"fgokgm","project":"a0n7e3lr","account":"144798365827","region":"eu-central-1","deps":["fastapi==0.65.2","pydantic==1.8.2","starlette==0.14.2","typing-extensions==3.10.0.0"],"envs":null,"public":true,"log_level":"debug","cron":""}
