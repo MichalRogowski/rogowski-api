@@ -38,7 +38,11 @@ async def delete_question(question_key: str):
     return db.delete(question_key)
 
 
-@app.get("/answers", response_model=List[Answer])
+@app.get(
+    "/answers",
+    response_model=List[Answer],
+    dependencies=[Depends(Authenticator.confirm_basic_auth)],
+)
 async def get_list_of_answers():
     db = deta.Base("answers")
     return list(db.fetch())[0]
